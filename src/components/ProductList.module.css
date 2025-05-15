@@ -1,0 +1,19 @@
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .cards {
+    gap: 24px;
+  }
+}

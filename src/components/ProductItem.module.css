@@ -1,0 +1,25 @@
+.card {
+  gap: 16px;
+}
+
+.bestImg {
+  width: 343px;
+  height: 343px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.img {
+  width: 168px;
+  height: 168px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+/* Tablet  Desktop*/
+@media (min-width: 768px) {
+  .img {
+    width: 221px;
+    height: 221px;
+  }
+}
