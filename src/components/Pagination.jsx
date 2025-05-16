@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
+import styles from "./Pagination.module.css";
+import "./Pagination.css";
+
 function Pagination({ currPage, totalProducts, pageSize, handlePage }) {
   const [startPage, setStartPage] = useState(1);
   const visiblePageCount = 5;
@@ -56,20 +59,25 @@ function Pagination({ currPage, totalProducts, pageSize, handlePage }) {
   const pageNumbersToShow = getPageNumbers();
 
   return (
-    <div>
-      <button onClick={goToPreviousPage} disabled={startPage === 1}>
+    <div className={styles.pagination}>
+      <button
+        className={styles.page}
+        onClick={goToPreviousPage}
+        disabled={startPage === 1}
+      >
         <IoIosArrowBack />
       </button>
       {pageNumbersToShow.map((number) => (
         <button
           key={number}
           onClick={() => goToPage(number)}
-          className={currPage === number ? "active" : ""}
+          className={currPage === number ? "active pageNation" : "pageNation"}
         >
           {number}
         </button>
       ))}
       <button
+        className={styles.page}
         onClick={goToNextPage}
         disabled={startPage + visiblePageCount > totalPages}
       >

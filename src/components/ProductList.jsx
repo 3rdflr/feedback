@@ -22,7 +22,7 @@ function ProductList({ orderBy, pageSize, keyword, page, isBestProduct }) {
   }, [orderBy, pageSize, keyword, page]);
 
   return (
-    <ul className={styles.cards}>
+    <ul className={isBestProduct ? styles.bestItem : styles.allItem}>
       {items.map((item) => (
         <li key={item.id} className={styles.card}>
           <ProductItem item={item} isBestProduct={isBestProduct} />

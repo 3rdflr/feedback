@@ -80,7 +80,7 @@ function App() {
           pageSize={bestProduct}
           isBestProduct={isBestProduct}
         />
-        <div>
+        <div className={styles.headers}>
           <Header text={"전체 상품"} />
           <SearchItem value={search} onChange={handleSearch} />
           <Button href={"#"} buttonText={"상품등록하기"} />

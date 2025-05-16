@@ -1,5 +1,11 @@
+import styles from "./Button.module.css";
+
 function Button({ href, buttonText }) {
-  return <a href={href}>{buttonText}</a>;
+  return (
+    <a className={styles.button} href={href}>
+      {buttonText}
+    </a>
+  );
 }
 
 export default Button;
