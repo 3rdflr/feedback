@@ -32,6 +32,24 @@
   align-items: center;
 }
 
+.desktopLogo {
+  display: block;
+}
+
+.mobileLogo {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktopLogo {
+    display: none;
+  }
+
+  .mobileLogo {
+    display: block;
+  }
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .nav {
