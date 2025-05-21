@@ -1,0 +1,8 @@
+.list {
+  white-space: nowrap;
+  padding: 5px;
+}
+
+.list:hover {
+  cursor: pointer;
+}

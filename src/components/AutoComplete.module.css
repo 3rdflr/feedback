@@ -1,0 +1,16 @@
+.container {
+  width: 250px;
+}
+
+.input {
+  margin-top: 200px;
+  width: 100%;
+  font-size: large;
+  padding: 15px;
+}
+
+.lists {
+  position: relative;
+  list-style-type: none;
+  left: -20px;
+}
