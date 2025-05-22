@@ -26,3 +26,7 @@
 ### 심화
 
 키보드 탐색, Debounce, 섹션 그룹화, 선택 후 콜백, 없음 처리 기능을 추가했습니다.
+
+### Deploy
+
+https://app.netlify.com/projects/gorgeous-croissant-68d655/overview
