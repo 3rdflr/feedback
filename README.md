@@ -1,12 +1,32 @@
-# React + Vite
+# 요구사항
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 인풋 필드
 
-Currently, two official plugins are available:
+- 사용자가 검색어를 입력합니다.
+- 입력값이 변경될 때마다 추천 리스트가 갱신됩니다.
+  
+### 추천 리스트 출력
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- dummy 배열에서 입력값을 포함한 description이 있는 항목을 필터링하여 리스트로 출력합니다.
+- 필터링은 대소문자를 구분하지 않습니다.
+  
+### 검색어 하이라이팅
 
-## Expanding the ESLint configuration
+- ~리스트 항목 내에서 입력한 텍스트와 일치하는 부분을 <strong> 태그로 감싸서 굵게 표시합니다.~
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 항목 선택
+
+- 리스트에서 항목 클릭 시 해당 항목의 key가 인풋 필드에 입력됩니다.
+- 추천 리스트는 사라집니다.
+  
+### 타입 태그 표시
+
+- 각 항목의 type 값을 오른쪽에 태그 형태로 함께 출력합니다.
+
+### 심화
+
+키보드 탐색, Debounce, 섹션 그룹화, 선택 후 콜백, 없음 처리 기능을 추가했습니다.
+
+### Deploy
+
+https://app.netlify.com/projects/gorgeous-croissant-68d655/overview
