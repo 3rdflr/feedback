@@ -1,4 +1,4 @@
-import TextHighLight from "./textHighLight";
+import TextHighLight from "./textHighLight.jsx";
 import styles from "./SuggestionItems.module.css";
 
 const SuggestionItem = ({ suggestion, value, onClick, isSelected }) => {

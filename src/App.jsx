@@ -1,4 +1,4 @@
-import AutoComplete from "./components/AutoComplete";
+import AutoComplete from "./components/AutoComplete.jsx";
 import styles from "./App.module.css";
 function App() {
   return (

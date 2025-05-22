@@ -1,6 +1,6 @@
 import { useCallback, useState } from "react";
 import { debounce, groupBy } from "lodash";
-import { dummy } from "../dummy";
+import { dummy } from "../dummy.js";
 import SuggestionItems from "./SuggestionItems.jsx";
 import styles from "./AutoComplete.module.css";
 
